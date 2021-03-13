@@ -10,7 +10,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
-    game = discord.Streaming(name="BC ClaN 문의", url='https://www.twitch.tv/bc-clan')
+    game = discord.Streaming(name="현이씨봇 실행중", url='https://www.twitch.tv/hyeonec')
     await client.change_presence(status=discord.Status.online, activity=game)
 
 

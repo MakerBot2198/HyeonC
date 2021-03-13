@@ -50,7 +50,7 @@ async def on_message(message):
         value = message.content[8:]
         embed = discord.Embed(color=selcolor)
         embed.add_field(name="\u200b", value=value, inline=False)
-        embed.set_author(name="BC ClaN", icon_url=message.author.avatar_url)
+        embed.set_author(name="현이씨", icon_url=message.author.avatar_url)
 
         await message.channel.send(embed=embed)
         await message.delete()
@@ -69,7 +69,7 @@ async def on_message(message):
         time.sleep(1)
         embed = discord.Embed(color=0x9932CC)
         embed.add_field(name="\u200b", value=f"{number}개의 메시지가 삭제되었습니다.", inline=False)
-        embed.set_author(name="BC ClaN 메시지 삭제")
+        embed.set_author(name="현이씨 메시지 삭제")
 
         await message.channel.send(embed=embed)
         time.sleep(10)
